@@ -66,8 +66,6 @@ jobs:
         with:
           images: wpilib/axon
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge
             type=semver,pattern={{version}}
       - name: Base - Build and push

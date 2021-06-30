@@ -29,8 +29,6 @@ jobs:
         with:
           images: wpilib/axon-base
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge
             type=semver,pattern={{version}}
       - name: Base - Build and push
@@ -49,8 +47,6 @@ jobs:
         with:
           images: wpilib/axon-dataset
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge
             type=semver,pattern={{version}}
       - name: Dataset - Build and push
@@ -71,8 +67,6 @@ jobs:
         with:
           images: wpilib/axon-metrics
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge
             type=semver,pattern={{version}}
       - name: Metrics - Build and push
@@ -93,8 +87,6 @@ jobs:
         with:
           images: wpilib/axon-training
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge
             type=semver,pattern={{version}}
       - name: Training - Build and push
@@ -115,8 +107,6 @@ jobs:
         with:
           images: wpilib/axon-tflite
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge
             type=semver,pattern={{version}}
       - name: tflite - Build and push
@@ -138,8 +128,6 @@ jobs:
         with:
           images: wpilib/axon-test
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=edge
             type=semver,pattern={{version}}
       - name: Test - Build and push
